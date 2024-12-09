@@ -218,3 +218,8 @@ A segunda técnica aplicada (Árvore de Decisão ID3) se demonstrou superior nes
 
 Para a aplicação em questão, será de muita utilidade trazer para uso na empresa uma ferramenta robusta como esta, reduzindo significativamente o tempo de trabalho das equipes de planejamento, que atualmente realizam esta etapa de forma manual.
 
+
+---------------------------------------------------------
+Pós Graduação em Business Inteligence Master
+
+Universidade Pontificia Católica do Rio de Janeiro
