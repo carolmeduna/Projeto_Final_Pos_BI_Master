@@ -1,4 +1,4 @@
-# Projeto_Final_Pos_BI_Master
+# Aplicação_de_Machine_Learning_em_Classificação_para_o_Planejamento_da_Demanda_Probabilística_de_Recursos_Críticos_Submarinos
 
 # Título: Aplicação de Machine Learning em Classificação para o Planejamento da Demanda Probabilística de Recursos Críticos Submarinos
 Aluna: Carolina Meduna Baziewicz
@@ -6,27 +6,26 @@ Orientador: Prof. Dra. Manoela Kohler
 
 Trabalho apresentado ao curso BI MASTER como pré-requisito para conclusão de curso pela PUC-Rio.
 
-Resumo
+**Resumo**
+Neste trabalho, foram aplicados dois algoritmos de classificação de *machine learning* num conjunto de dados real: o *suport vector machine* (SVM) e o *random forest* (ID3). A base de dados consiste em 4 colunas de entrada para 1 coluna de saída com aproximadamente 120.000 linhas, em que todos os dados são categóricos e a coluna de classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico". Os métodos demonstraram excelentes resultados de acurácia, ambos superiores a 99%. Porém o tempo de treinamento do algoritmo Random Forest foi significativamente menor, tornando-se a melhor na comparação. A aplicação se demonstra adequada e bastante eficiente para o uso ao qual se propõe.
 
+**Abstract**
+In this work, two machine learning classification algorithms were applied to a real dataset: the *support vector machine* (SVM) and the *random forest* (ID3). The database consists of 4 input columns to 1 output column with approximately 120,000 rows, in which all data are categorical and the classification column has two options: "Deterministic" or "Probabilistic". The methods demonstrated excellent accuracy results, both above 99%. However, the training time of the Random Forest algorithm was significantly shorter, making it the best in the comparison. The application proves to be adequate and quite efficient for the use for which it is proposed.
 
+# 1. Introdução e Objetivos
+A aplicação de algoritmos de machine learning para problemas de classificação é uma abordagem poderosa e flexível para resolver uma ampla gama de desafios. A chave para o sucesso está em preparar bem os dados, escolher o algoritmo certo, treinar adequadamente o modelo e avaliar seu desempenho de forma rigorosa. Com o avanço das técnicas de ML, algoritmos cada vez mais sofisticados têm sido aplicados com sucesso em problemas complexos, oferecendo soluções inteligentes para problemas do cotidiano.
 
+Para fins de aplicação e construção deste trabalho, foi escolhido como objeto de estudo um problema real do cotidiano de uma empresa do setor de óleo e gás cuja solução poderia se dar através dos algoritmos de *machine learning*.
 
-Abstract
-
-
-
-
-
-# 1. Introdução
-Periodicamente, para os processos de Planejamento Estratégico e Tático de Recursos Críticos as áreas clientes da Área Submarina apoiadas pelas áreas de implantação de projetos submarinos, são requisitadas a realizarem o levantamento da demanda necessária de serviços e materiais para o cumprimento das atividades previstas nos cronogramas dos projetos, tais como instalações de novas unidades, perfuração de novos poços, instalação de equipamentos, manutenção e substituição de linhas, integridade dos dutos e umbilicais submarinos instalados, abandono de poços, entre outros.
-
-Este processo é fundamental para identificação da necessidade de disponibilização das embarcações submarinas, conhecidas como recursos críticos (embarcações do tipo PLSV, AHTS, RSV, SDSV e SESV), bem como para sinalizar para a companhia o quanto ela deve se preparar física e financeiramente para cumprir com as atividades previstas nos projetos.
+Nesta empresa, as áreas clientes periodicamente são requisitadas a realizarem o levantamento da demanda necessária de serviços e materiais para o cumprimento das atividades previstas nos cronogramas dos projetos nos anos seguintes, tais como instalações de novas unidades, perfuração de novos poços, instalação de equipamentos, manutenção e substituição de linhas, integridade dos dutos e umbilicais submarinos instalados, abandono de poços, entre outros. Este processo é fundamental para identificação da necessidade de disponibilização das embarcações submarinas, conhecidas como recursos críticos (embarcações do tipo PLSV, AHTS, RSV, SDSV e SESV), bem como para sinalizar para a companhia o quanto ela deve se preparar física e financeiramente para cumprir com as atividades previstas nos projetos.
 
 Parte da demanda informada neste processo é diretamente identificada, pois possui escopo e prazo plenamente definidos e por isso denomina-se “demanda determinística”, enquanto outra parte desta demanda caracteriza-se por uma demanda de difícil previsibilidade, não possuem escopo e/ou prazo plenamente definidos, mas ainda com elevada frequência de ocorrência, denominada “demanda probabilística”. Não se sabe ao certo quando ou onde esta demanda irá ocorrer, porém devido à sua representatividade, faz-se necessário o planejamento de recursos para esta finalidade. 
 
-Recentemente, foi desenvolvida uma ferramenta de previsão com uso de estatística e inteligência artificial para auxiliar as áreas no levantamento da demanda probabilística, que utiliza como input principal o histórico de realização dos serviços. Para fazer uso desta ferramenta, as áreas clientes precisam necessariamente possuir de forma antecipada a série temporal histórica de ocorrência das ordens de serviço probabilísticas, e para isso necessitam de uma base classificada de ordens de serviço.No processo atual, a classificação da base ocorre de forma manual, sendo processada individualmente por um analista. Contudo, o processo de classificação manual além de trazer riscos para as informações, também onera a realização das atividades pelas gerências de planejamento.
+Para realizar o referido planejamento, as áreas utilizam uma ferramenta de previsão com uso de estatística e inteligência artificial para auxiliar as áreas no levantamento da demanda probabilística, que utiliza como input principal o histórico de realização dos serviços. Para fazer uso desta ferramenta, as áreas clientes precisam necessariamente possuir de forma antecipada a série temporal histórica de ocorrência das ordens de serviço probabilísticas, e para isso necessitam de uma base classificada de ordens de serviço. No processo atual, a classificação da base ocorre de forma manual, sendo processada individualmente por um analista. Contudo, o processo de classificação manual além de trazer riscos para as informações, também onera a realização das atividades pelas gerências de planejamento.
 
-Toda ordem de serviço pode ser classificada como "Determinística" ou "Probabilística". Quando determinado serviço é realizado com uma embarcação, a ordem de serviço associada fica registrada no sistema próprio da empresa. Em um mês, são geradas em média X novas ordens de serviço, fazendo com que a quantidade de registros acumulados ao longo de um período seja enorme. Pensando neste problema, o objetivo deste trabalho consiste em validar o uso de machine learning para auxiliar na classificação da base de ordens de serviço, facilitando o uso da ferramenta recentemente desenvolvida, e tornando assim mais eficiente o processo de planejamento da empresa.
+Toda ordem de serviço pode ser classificada como "Determinística" ou "Probabilística". Quando determinado serviço é realizado com uma embarcação, a ordem de serviço associada fica registrada no sistema próprio da empresa. Em um mês, são geradas em média X novas ordens de serviço, fazendo com que a quantidade de registros acumulados ao longo de um período seja enorme.
+
+Pensando neste problema, o objetivo deste trabalho consiste em validar o uso de machine learning para auxiliar na classificação da base de ordens de serviço, facilitando o uso da ferramenta recentemente desenvolvida, e tornando assim mais eficiente o processo de planejamento da empresa.
 
 # 2. Desenvolvimento
 A aplicação de algoritmos de machine learning (ML) para problemas de classificação é um processo estruturado que envolve várias etapas: a preparação dos dados, a escolha do algoritmo, o treinamento do modelo e a avaliação de seu desempenho.
@@ -185,20 +184,33 @@ Resultados da Validação:
 
 
 ## 3.4 Análise Comparativa
+A análise dos resultados do capítulo anterior nos permite traçar uma análise comparativa entre os métodos utilizados.
+De forma geral, ambos os métodos se demonstraram excelentes para o problema em questão. A acurácia de ambos é bastante similar, e o percentual de Acurácia tanto no conjunto de treino, quanto teste e validação é superior a 99%.
+Entretanto, o tempo computacional requerido para treinar o modelo SVM é significativamente maior. Enquanto o SVM executou a etapa de treinamento em 22minutos, o algoritmo Árvore de Decisão demorou apenas 1,3 seg.
 
-| Método | Tempo Treinamento Modelo | Qtde Acertos Teste | Qtde Erros Teste | Acurácia |
+| Método | Tempo Treinamento Modelo | Qtde Acertos Treino | Qtde Erros Treino | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM | 22m20seg | 21.564 | 30 | 0.99861 |
 | Árvore de Decisão | 1,3 seg | 21.566 | 28 | 0.99870 | 
 
+| Método | Tempo Treinamento Modelo | Qtde Acertos Teste | Qtde Erros Teste | Acurácia |
+|------------------------|------------------------|------------------------|------------------------| ------------------------|
+| SVM |  | 21.564 | 30 | 0.99861 |
+| Árvore de Decisão |  | 21.566 | 28 | 0.99870 | 
 
+| Método | Tempo Treinamento Modelo | Qtde Acertos Validação | Qtde Erros Validação | Acurácia |
+|------------------------|------------------------|------------------------|------------------------| ------------------------|
+| SVM |  |  |  |  |
+| Árvore de Decisão |  |  |  |  | 
+
+Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performe foi a Árvore de Decisão ID3.
 
 # 4. Conclusões
-A aplicação de algoritmos de machine learning para problemas de classificação é uma abordagem poderosa e flexível para resolver uma ampla gama de desafios. A chave para o sucesso está em preparar bem os dados, escolher o algoritmo certo, treinar adequadamente o modelo e avaliar seu desempenho de forma rigorosa. Com o avanço das técnicas de ML, algoritmos cada vez mais sofisticados têm sido aplicados com sucesso em problemas complexos, oferecendo soluções inteligentes para problemas do cotidiano.
+Neste trabalho foram aplicados dois métodos diferentes de machine learning para um problema clássico de classificação, em um contexto real do cotidiano de uma empresa.
 
-O Support Vector Machine é uma técnica robusta e eficaz para classificação, especialmente quando se trata de dados de alta dimensão e problemas de fronteiras de decisão complexas. Seu princípio fundamental de maximizar a margem de separação entre as classes, combinado com o uso de kernels para trabalhar com dados não lineares, torna-o uma ferramenta poderosa em diversos domínios, como reconhecimento de padrões, bioinformática e aprendizado de máquinas em geral.
+A primeira técnica aplicado (SVM) se demonstrou bastante eficaz, apesar do elevado tempo de treinamento do modelo. O SVM é uma técnica robusta e eficaz para classificação, especialmente quando se trata de dados de alta dimensão e problemas de fronteiras de decisão complexas. Seu princípio fundamental de maximizar a margem de separação entre as classes, combinado com o uso de kernels para trabalhar com dados não lineares, torna-o uma ferramenta poderosa em diversos domínios, como reconhecimento de padrões, bioinformática e aprendizado de máquinas em geral.
 
-O algoritmo Árvore de Decisão ID3 é uma técnica poderosa e intuitiva para classificação, baseada na ideia de dividir recursivamente os dados em subconjuntos mais homogêneos em relação às classes. Embora seja simples e eficaz para problemas pequenos e moderados, ele pode sofrer com problemas de sobreajuste e pode não ser ideal para todos os tipos de dados. No entanto, sua explicabilidade e a facilidade com que pode ser implementado tornam o ID3 uma ferramenta valiosa, especialmente em cenários em que a interpretabilidade do modelo é crucial.
+A segunda técnica aplicada (Árvore de Decisão ID3) se demonstrou superior neste caso, pela elevada acurácia e baixíssimo tempo de resposta. O algoritmo Árvore de Decisão ID3 é uma técnica poderosa e intuitiva para classificação, baseada na ideia de dividir recursivamente os dados em subconjuntos mais homogêneos em relação às classes. Embora seja simples e eficaz para problemas pequenos e moderados, ele pode sofrer com problemas de sobreajuste e pode não ser ideal para todos os tipos de dados. No entanto, sua explicabilidade e a facilidade com que pode ser implementado tornam o ID3 uma ferramenta valiosa, especialmente em cenários em que a interpretabilidade do modelo é crucial.
 
-
+Para a aplicação em questão, será de muita utilidade trazer para uso na empresa uma ferramenta robusta como esta, reduzindo significativamente o tempo de trabalho das equipes de planejamento, que atualmente realizam esta etapa de forma manual.
 
