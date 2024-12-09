@@ -94,8 +94,8 @@ Nesta seção serão apresentados os resultados obtidos pela aplicação dos Alg
 ## 3.1 Descrição do Conjunto de Dados e Tratamento
 Para este estudo, foi utilizada uma base real de dados, composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos.
 
-|Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
-|---|---|
+| Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
+|--------------|--------------|--------------|--------------|--------------|
 | Inspeção Programada PIDF-2 | Manutenção e Operação de Sistemas Submarinos | Inspeção de Dutos | Espírito Santo | Determinístico |
 
 
