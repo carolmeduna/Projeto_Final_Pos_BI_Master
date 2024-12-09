@@ -1,11 +1,12 @@
 # Aplicação_de_Machine_Learning_em_Classificação_para_o_Planejamento_da_Demanda_Probabilística_de_Recursos_Críticos_Submarinos
 
-# Título: Aplicação de Machine Learning em Classificação para o Planejamento da Demanda Probabilística de Recursos Críticos Submarinos
+# Projeto Final
 Aluna: Carolina Meduna Baziewicz
 Orientador: Prof. Dra. Manoela Kohler
 
 Trabalho apresentado ao curso BI MASTER como pré-requisito para conclusão de curso pela PUC-Rio.
 
+------------------------------------------------------------------------------------------------------------------------------
 **Resumo**
 Neste trabalho, foram aplicados dois algoritmos de classificação de *machine learning* num conjunto de dados real: o *suport vector machine* (SVM) e o *random forest* (ID3). A base de dados consiste em 4 colunas de entrada para 1 coluna de saída com aproximadamente 120.000 linhas, em que todos os dados são categóricos e a coluna de classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico". Os métodos demonstraram excelentes resultados de acurácia, ambos superiores a 99%. Porém o tempo de treinamento do algoritmo Random Forest foi significativamente menor, tornando-se a melhor na comparação. A aplicação se demonstra adequada e bastante eficiente para o uso ao qual se propõe.
 
