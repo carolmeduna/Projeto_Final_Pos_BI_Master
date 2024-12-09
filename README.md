@@ -95,8 +95,10 @@ Nesta seção serão apresentados os resultados obtidos pela aplicação dos Alg
 Para este estudo, foi utilizada uma base real de dados, composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos.
 
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
-|--------------|--------------|--------------|--------------|--------------|
+|-----------------|-----------------|-----------------|-----------------|-----------------|
 | Inspeção Programada PIDF-2 | Manutenção e Operação de Sistemas Submarinos | Inspeção de Dutos | Espírito Santo | Determinístico |
+| Instalação de Acessórios | Emergência/Contingência | Dados em Sistema Submarinos e/ou de Ancoragem | Bacia de Campos | Probabilístico |
+| Lançamento de Âncora | Implantação de Novos Sistemas Submarinos | Ancoragem de Unidade Marítima | Bacia de Santos | Determinístico |
 
 
 
