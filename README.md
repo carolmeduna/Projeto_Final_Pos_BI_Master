@@ -2,7 +2,8 @@
 
 # Projeto Final
 Aluna: Carolina Meduna Baziewicz
-Orientador: Prof. Dra. Manoela Kohler
+
+Orientadora: Prof. Dra. Manoela Kohler
 
 Trabalho apresentado ao curso BI MASTER como pré-requisito para conclusão de curso pela PUC-Rio.
 
