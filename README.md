@@ -57,6 +57,7 @@ Vantagens do SVM
   Alta performance: O SVM é eficaz mesmo em conjuntos de dados com alta dimensionalidade, o que o torna uma excelente escolha para problemas de classificação com muitas variáveis.
   Boa generalização: Devido à maximização da margem, o SVM tende a ser bom em generalizar para dados novos, evitando o overfitting.
   Flexibilidade com kernels: O uso de diferentes funções kernel permite que o SVM seja aplicado a uma ampla variedade de problemas, incluindo aqueles com fronteiras de decisão não lineares.
+
 Desvantagens do SVM
   Custo computacional: O treinamento de um modelo SVM pode ser computacionalmente intensivo, especialmente em grandes conjuntos de dados. Isso ocorre porque o tempo de treinamento pode crescer rapidamente com o número de amostras e características.
   Escolha do kernel: A escolha do kernel correto e a definição dos parâmetros adequados (como C e o parâmetro do kernel) podem ser desafiadoras e requerem ajuste fino.
@@ -100,6 +101,7 @@ Para este estudo, foi utilizada uma base real de dados, composta por 5 colunas e
 | Instalação de Acessórios | Emergência/Contingência | Dados em Sistema Submarinos e/ou de Ancoragem | Bacia de Campos | Probabilístico |
 | Lançamento de Âncora | Implantação de Novos Sistemas Submarinos | Ancoragem de Unidade Marítima | Bacia de Santos | Determinístico |
 | Manuseio de Válvula (MDV) | Manutenção e Operação de Sistemas Submarinos e de Ancoragem | Operação de Equipamentos Submarinos | Espírito Santos | Probabilístico |
+
 Tabela 1 - Amostra do Conjunto de Dados
 
 ## 3.2 Aplicação do Algoritmo Suport Vector Machine
