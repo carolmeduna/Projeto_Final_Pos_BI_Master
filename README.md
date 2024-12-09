@@ -53,12 +53,12 @@ O que torna o SVM tão poderoso em problemas não lineares é o uso da técnica 
 
 Em muitos cenários do mundo real, os dados não são perfeitamente separáveis. Para lidar com isso, o SVM introduz uma penalização chamada de margem suave. Em vez de insistir em uma separação perfeita, o SVM permite algumas violações da margem, ou seja, alguns pontos de dados podem ser classificados incorretamente, mas com um custo associado. Esse parâmetro de penalização é controlado pelo parâmetro C, que equilibra a busca pela margem máxima e a penalização por erros de classificação. Quando C é pequeno, o modelo permite mais erros (maior margem de separação, mas mais flexível), enquanto um C grande tenta minimizar os erros de classificação ao custo de uma margem menor.
 
-Vantagens do SVM
+Vantagens do SVM:
   - Alta performance: O SVM é eficaz mesmo em conjuntos de dados com alta dimensionalidade, o que o torna uma excelente escolha para problemas de classificação com muitas variáveis.
   - Boa generalização: Devido à maximização da margem, o SVM tende a ser bom em generalizar para dados novos, evitando o overfitting.
   - Flexibilidade com kernels: O uso de diferentes funções kernel permite que o SVM seja aplicado a uma ampla variedade de problemas, incluindo aqueles com fronteiras de decisão não lineares.
 
-Desvantagens do SVM
+Desvantagens do SVM:
   - Custo computacional: O treinamento de um modelo SVM pode ser computacionalmente intensivo, especialmente em grandes conjuntos de dados. Isso ocorre porque o tempo de treinamento pode crescer rapidamente com o número de amostras e características.
   - Escolha do kernel: A escolha do kernel correto e a definição dos parâmetros adequados (como C e o parâmetro do kernel) podem ser desafiadoras e requerem ajuste fino.
 
@@ -67,11 +67,12 @@ O algoritmo Árvore de Decisão ID3 (Iterative Dichotomiser 3) é um dos método
 
 O algoritmo ID3 é baseado na ideia de dividir os dados em subconjuntos com o máximo de homogeneidade possível em relação à classe alvo. Para isso, o ID3 utiliza um critério de seleção de atributos chamado ganho de informação. O ganho de informação mede a redução da incerteza (ou entropia) sobre a classe alvo ao dividir o conjunto de dados com base em um atributo específico.
 
-Vantagens do ID3
+Vantagens do ID3:
   - Simplicidade e Interpretabilidade: O ID3 gera árvores fáceis de entender e interpretar, o que facilita a explicação dos resultados para especialistas não técnicos.
   - Eficiência: O algoritmo é relativamente eficiente em termos de tempo de execução, especialmente em conjuntos de dados menores e mais simples.
   - Aplicabilidade: Funciona bem em problemas de classificação onde as variáveis independentes são discretas ou podem ser discretizadas.
-Desvantagens do ID3
+
+Desvantagens do ID3:
   - Sobreajuste: O algoritmo pode criar árvores muito grandes e complexas, especialmente se o conjunto de dados for muito ruidoso ou contiver muitos atributos irrelevantes. Isso leva ao sobreajuste, em que o modelo se adapta muito aos dados de treinamento e tem um desempenho ruim em novos dados.
   - Dependência de atributos discretos: O ID3 é mais adequado para atributos discretos e pode exigir transformações nos dados para lidar com atributos contínuos.
   - Ganho de Informação e Atributos com Muitos Valores: A escolha do atributo a ser dividido pode ser enviesada para atributos com muitos valores, uma vez que eles podem produzir divisões mais puras, mas que não são necessariamente as mais informativas.
