@@ -54,13 +54,13 @@ O que torna o SVM tão poderoso em problemas não lineares é o uso da técnica 
 Em muitos cenários do mundo real, os dados não são perfeitamente separáveis. Para lidar com isso, o SVM introduz uma penalização chamada de margem suave. Em vez de insistir em uma separação perfeita, o SVM permite algumas violações da margem, ou seja, alguns pontos de dados podem ser classificados incorretamente, mas com um custo associado. Esse parâmetro de penalização é controlado pelo parâmetro C, que equilibra a busca pela margem máxima e a penalização por erros de classificação. Quando C é pequeno, o modelo permite mais erros (maior margem de separação, mas mais flexível), enquanto um C grande tenta minimizar os erros de classificação ao custo de uma margem menor.
 
 Vantagens do SVM
-  Alta performance: O SVM é eficaz mesmo em conjuntos de dados com alta dimensionalidade, o que o torna uma excelente escolha para problemas de classificação com muitas variáveis.
-  Boa generalização: Devido à maximização da margem, o SVM tende a ser bom em generalizar para dados novos, evitando o overfitting.
-  Flexibilidade com kernels: O uso de diferentes funções kernel permite que o SVM seja aplicado a uma ampla variedade de problemas, incluindo aqueles com fronteiras de decisão não lineares.
+  - Alta performance: O SVM é eficaz mesmo em conjuntos de dados com alta dimensionalidade, o que o torna uma excelente escolha para problemas de classificação com muitas variáveis.
+  - Boa generalização: Devido à maximização da margem, o SVM tende a ser bom em generalizar para dados novos, evitando o overfitting.
+  - Flexibilidade com kernels: O uso de diferentes funções kernel permite que o SVM seja aplicado a uma ampla variedade de problemas, incluindo aqueles com fronteiras de decisão não lineares.
 
 Desvantagens do SVM
-  Custo computacional: O treinamento de um modelo SVM pode ser computacionalmente intensivo, especialmente em grandes conjuntos de dados. Isso ocorre porque o tempo de treinamento pode crescer rapidamente com o número de amostras e características.
-  Escolha do kernel: A escolha do kernel correto e a definição dos parâmetros adequados (como C e o parâmetro do kernel) podem ser desafiadoras e requerem ajuste fino.
+  - Custo computacional: O treinamento de um modelo SVM pode ser computacionalmente intensivo, especialmente em grandes conjuntos de dados. Isso ocorre porque o tempo de treinamento pode crescer rapidamente com o número de amostras e características.
+  - Escolha do kernel: A escolha do kernel correto e a definição dos parâmetros adequados (como C e o parâmetro do kernel) podem ser desafiadoras e requerem ajuste fino.
 
 ## 2.2.2 Árvore de Decisão ID3
 O algoritmo Árvore de Decisão ID3 (Iterative Dichotomiser 3) é um dos métodos mais tradicionais e amplamente utilizados em machine learning para problemas de classificação. Ele constrói uma árvore de decisão de forma recursiva, onde cada nó interno representa uma decisão com base em um atributo dos dados, e cada folha da árvore corresponde a uma classe ou categoria. A construção da árvore visa dividir o espaço de características de maneira a maximizar a pureza das classes em cada nó.
