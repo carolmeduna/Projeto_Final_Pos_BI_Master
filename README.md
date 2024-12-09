@@ -93,7 +93,7 @@ Além disso, dependendo do problema, pode ser necessário ajustar o modelo para 
 Nesta seção serão apresentados os resultados obtidos pela aplicação dos Algoritmos SVM e Árvore de Decisão ID3 no conjunto de dados.
 
 ## 3.1 Descrição do Conjunto de Dados e Tratamento
-Para este estudo, foi utilizada uma base real de dados, composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos.
+Para este estudo, foi utilizada uma base real de dados da empresa. A base já tratada é composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos. Todas as colunas da base são compostas por atributos categóricos. A coluna classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico".
 
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -103,6 +103,14 @@ Para este estudo, foi utilizada uma base real de dados, composta por 5 colunas e
 | Manuseio de Válvula (MDV) | Manutenção e Operação de Sistemas Submarinos e de Ancoragem | Operação de Equipamentos Submarinos | Espírito Santos | Probabilístico |
 
 Tabela 1 - Amostra do Conjunto de Dados
+
+A coluna abaixo apresenta a quantidade de atributos distintos por coluna, na base estudada.
+
+| Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
+|------------------------|------------------------|------------------------|------------------------|------------------------|
+| 556 | 4 | 54 | 12| 2 |
+
+Tabela 2 - Quantidade de Atributos Distintos por Coluna
 
 ## 3.2 Aplicação do Algoritmo Suport Vector Machine
 
