@@ -91,6 +91,8 @@ Além disso, dependendo do problema, pode ser necessário ajustar o modelo para 
 # 3. Resultados
 
 
+![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
+
 
 
 
