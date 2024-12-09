@@ -104,7 +104,7 @@ Conforme comentado anteriormente, para este estudo foi utilizada uma base real d
 | Lançamento de Âncora | Implantação de Novos Sistemas Submarinos | Ancoragem de Unidade Marítima | Bacia de Santos | Determinístico |
 | Manuseio de Válvula (MDV) | Manutenção e Operação de Sistemas Submarinos e de Ancoragem | Operação de Equipamentos Submarinos | Espírito Santos | Probabilístico |
 
-Tabela 1 - Amostra do Conjunto de Dados
+        Tabela 1 - Amostra do Conjunto de Dados
 
 A Tabela a seguir apresenta a quantidade de atributos distintos por coluna, na base estudada.
 
@@ -204,6 +204,8 @@ Entretanto, o tempo computacional requerido para treinar o modelo SVM é signifi
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM |  |  |  |  |
 | Árvore de Decisão |  |  |  |  | 
+
+        Tabela 2 - Comparação dos Resultados Treino, Teste e Validação
 
 Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performance foi a Árvore de Decisão ID3.
 
