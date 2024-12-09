@@ -118,9 +118,34 @@ Tempo de Execução:
 
 
 ## 3.3 Aplicação do Algortimo Árvore de Decisão ID3
+Neste capítulo serão apresentados os resultados da aplicação do algoritmo de Árvore de Decisão ID3 no conjunto de dados proposto.
 
-Tempo de Execução:
 ![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
+
+Figura 1 - Representação da Árvore de Decisão Gerada
+
+A seguir, os resultados obtidos na Etapa de Treinamento:
+Profundidade da Árvore: 14 níveis
+Duração Etapa de Treinamento (conjunto treino): 1,3 seg
+Duração Etapa de Previsão e Avaliação (conjunto treino): 0,2 seg
+Acurácia: 0.9990043184791544
+Kappa: 0.9959406115564705
+F1: 0.9965215984468533
+
+![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
+
+Figura 2 - Matriz de Confusão - Resultados do Treino - Método ID3
+
+
+A seguir, os resultados obtidos na Etapa de Teste:
+
+
+![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
+
+Figura 3 - Matriz de Confusão - Resultados do Teste
+
+Duração Etapa de Previsão e Avaliação (conjunto teste): 0,2 seg
+
 
 
 ## 3.4 Análise Comparativa
