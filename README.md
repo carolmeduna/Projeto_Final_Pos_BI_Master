@@ -93,7 +93,7 @@ Além disso, dependendo do problema, pode ser necessário ajustar o modelo para 
 Nesta seção serão apresentados os resultados obtidos pela aplicação dos Algoritmos SVM e Árvore de Decisão ID3 no conjunto de dados.
 
 ## 3.1 Descrição do Conjunto de Dados e Tratamento
-Para este estudo, foi utilizada uma base real de dados da empresa. A base já tratada é composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos. Todas as colunas da base são compostas por atributos categóricos. A coluna classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico".
+Conforme comentado anteriormente, para este estudo foi utilizada uma base real de dados da empresa de registro das ordens de serviço realizadas por embarcações submarinas de uma empresa no ramo de óleo e gás. A quantidade de colunas original foi reduzida através da escolha das colunas principais, bem como o tratamento de *missings* efetuado. A base tratada é composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos. Todas as colunas da base são compostas por atributos categóricos. A coluna classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico". Para efeitos de Ilustração, na Tabela 1 abaixo foi apresentada uma amostra do conjunto de Dados.
 
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -104,7 +104,7 @@ Para este estudo, foi utilizada uma base real de dados da empresa. A base já tr
 
 Tabela 1 - Amostra do Conjunto de Dados
 
-A coluna abaixo apresenta a quantidade de atributos distintos por coluna, na base estudada.
+A Tabela a seguir apresenta a quantidade de atributos distintos por coluna, na base estudada.
 
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
