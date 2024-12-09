@@ -31,7 +31,7 @@ Toda ordem de serviço pode ser classificada como "Determinística" ou "Probabil
 # 2. Desenvolvimento
 A aplicação de algoritmos de machine learning (ML) para problemas de classificação é um processo estruturado que envolve várias etapas: a preparação dos dados, a escolha do algoritmo, o treinamento do modelo e a avaliação de seu desempenho.
 
-2.1. Preparação dos Dados
+##2.1. Preparação dos Dados
 O primeiro passo para aplicar um algoritmo de ML a um problema de classificação é preparar os dados. Isso envolve coletar e organizar um conjunto de dados que contenha exemplos rotulados — ou seja, exemplos de entradas (características ou variáveis) junto com suas respectivas classes ou rótulos. Esses dados são frequentemente divididos em dois conjuntos principais:
 
   Conjunto de treinamento: Usado para treinar o modelo de ML, ou seja, para ensinar o algoritmo a fazer previsões.
@@ -39,10 +39,10 @@ O primeiro passo para aplicar um algoritmo de ML a um problema de classificaçã
 
 Além disso, é importante realizar algumas etapas de pré-processamento dos dados, como a normalização ou padronização das variáveis, tratamento de valores ausentes e conversão de variáveis categóricas em numéricas.
 
-2.2 Escolha do Algoritmo
+##2.2 Escolha do Algoritmo
 Existem diversos algoritmos de classificação em machine learning, e a escolha do melhor depende do tipo de dados, da complexidade do problema e dos requisitos de desempenho. Neste trabalho, foram utilizados dois algortimos diferentes, para fins de comparação de uso e desempenho de acurácia: o Suport Vector Machine (SVM) e o Árvore de Decisão ID3.
 
-2.2.1 Suport Vector Machine
+##2.2.1 Suport Vector Machine
 O Support Vector Machine (SVM) é um dos métodos de aprendizado supervisionado mais poderosos e amplamente utilizados para problemas de classificação. Ele busca encontrar um hiperplano que melhor separa os dados de diferentes classes em um espaço de alta dimensão. Sua popularidade se deve à eficácia em classificar dados não lineares e ao conceito sólido de margem de separação.
 
 Em um problema de classificação binária, onde as classes são representadas por dois grupos distintos de pontos de dados, o SVM tenta encontrar o hiperplano que separa essas classes de forma que a margem entre os dois grupos seja maximizada. A margem é definida como a distância entre o hiperplano e os pontos de dados mais próximos de cada classe, chamados de vetores de suporte. Esses vetores de suporte são essenciais para a definição do modelo e para a construção do hiperplano, pois qualquer ponto de dados fora deles não afeta diretamente a posição do hiperplano. A ideia por trás da maximização da margem é que um modelo com uma margem maior tem um melhor desempenho de generalização, ou seja, é mais provável que ele se comporte bem com novos dados que não foram usados durante o treinamento.
@@ -61,7 +61,7 @@ Desvantagens do SVM
   Custo computacional: O treinamento de um modelo SVM pode ser computacionalmente intensivo, especialmente em grandes conjuntos de dados. Isso ocorre porque o tempo de treinamento pode crescer rapidamente com o número de amostras e características.
   Escolha do kernel: A escolha do kernel correto e a definição dos parâmetros adequados (como C e o parâmetro do kernel) podem ser desafiadoras e requerem ajuste fino.
 
-2.2.2 Árvore de Decisão ID3
+##2.2.2 Árvore de Decisão ID3
 O algoritmo Árvore de Decisão ID3 (Iterative Dichotomiser 3) é um dos métodos mais tradicionais e amplamente utilizados em machine learning para problemas de classificação. Ele constrói uma árvore de decisão de forma recursiva, onde cada nó interno representa uma decisão com base em um atributo dos dados, e cada folha da árvore corresponde a uma classe ou categoria. A construção da árvore visa dividir o espaço de características de maneira a maximizar a pureza das classes em cada nó.
 
 O algoritmo ID3 é baseado na ideia de dividir os dados em subconjuntos com o máximo de homogeneidade possível em relação à classe alvo. Para isso, o ID3 utiliza um critério de seleção de atributos chamado ganho de informação. O ganho de informação mede a redução da incerteza (ou entropia) sobre a classe alvo ao dividir o conjunto de dados com base em um atributo específico.
@@ -75,10 +75,10 @@ Desvantagens do ID3
   - Dependência de atributos discretos: O ID3 é mais adequado para atributos discretos e pode exigir transformações nos dados para lidar com atributos contínuos.
   - Ganho de Informação e Atributos com Muitos Valores: A escolha do atributo a ser dividido pode ser enviesada para atributos com muitos valores, uma vez que eles podem produzir divisões mais puras, mas que não são necessariamente as mais informativas.
 
-2.3 Treinamento do Modelo
+##2.3 Treinamento do Modelo
 Após a escolha do algoritmo, o próximo passo é treinar o modelo. O treinamento envolve ajustar os parâmetros do modelo com base no conjunto de dados de treinamento. Durante o treinamento, o algoritmo tenta aprender padrões a partir das características dos dados que permitem prever corretamente as classes. A técnica de otimização usada varia de acordo com o algoritmo, mas o objetivo final é minimizar o erro de previsão, ou seja, tornar o modelo capaz de classificar corretamente os exemplos do conjunto de treinamento.
 
-2.4 Avaliação do Modelo
+##2.4 Avaliação do Modelo
 Uma vez treinado, o modelo é avaliado usando o conjunto de teste. A avaliação consiste em medir o desempenho do modelo em dados que não foram usados durante o treinamento. Para problemas de classificação, algumas métricas comuns de avaliação incluem:
 
   - Acurácia: Proporção de previsões corretas em relação ao total de previsões feitas.
