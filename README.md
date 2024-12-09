@@ -192,20 +192,20 @@ Entretanto, o tempo computacional requerido para treinar o modelo SVM é signifi
 
 | Método | Tempo Treinamento Modelo | Qtde Acertos Treino | Qtde Erros Treino | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
-| SVM | 22m20seg | 21.564 | 30 | 0.99861 |
-| Árvore de Decisão | 1,3 seg | 21.566 | 28 | 0.99870 | 
+| SVM | 22m20seg | 86.292 | 81 | 0.99906 |
+| Árvore de Decisão | 1,3 seg | 86.287 | 86 | 0.99900 | 
 
 | Método | Tempo Treinamento Modelo | Qtde Acertos Teste | Qtde Erros Teste | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
-| SVM |  | 21.564 | 30 | 0.99861 |
-| Árvore de Decisão |  | 21.566 | 28 | 0.99870 | 
+| SVM | 50seg | 21.564 | 30 | 0.99861 |
+| Árvore de Decisão | 0,2seg | 21.566 | 28 | 0.99870 | 
 
 | Método | Tempo Treinamento Modelo | Qtde Acertos Validação | Qtde Erros Validação | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM |  |  |  |  |
 | Árvore de Decisão |  |  |  |  | 
 
-Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performe foi a Árvore de Decisão ID3.
+Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performance foi a Árvore de Decisão ID3.
 
 # 4. Conclusões
 Neste trabalho foram aplicados dois métodos diferentes de machine learning para um problema clássico de classificação, em um contexto real do cotidiano de uma empresa.
