@@ -113,40 +113,84 @@ A Tabela a seguir apresenta a quantidade de atributos distintos por coluna, na b
 
 Tabela 2 - Quantidade de Atributos Distintos por Coluna
 
-## 3.2 Aplicação do Algoritmo Suport Vector Machine
+## 3.2 Aplicação do Algoritmo Suport Vector Machine (SVM)
 
-Tempo de Execução:
+A seguir, os resultados obtidos na Etapa de Treinamento:
+  - Duração Etapa de Treinamento (conjunto treino): 22m20.6s
+  - Duração Etapa de Previsão e Avaliação (conjunto teste): 50seg
+  - Acurácia: 0.9990622069396686
+  - Kappa: 0.9961762355098488
+  - F1: 0.9967234335180616
+  - Quantidade de Acertos: 86.292
+  - Quantidade de Erros: 81
 
+![image](https://github.com/user-attachments/assets/e9e87918-32a9-4495-9b01-843dc153c7a7)
 
-## 3.3 Aplicação do Algortimo Árvore de Decisão ID3
+        Figura 1 - Matriz de Confusão - Resultado de Treino - SVM
+
+Resultados de Teste:
+  - Acurácia Teste: 0.9986107252014449
+  - Kappa Teste: 0.9943426409357636
+  - F1 Teste: 0.9951534733441034
+  - Quantidade de Acertos: 21.564
+  - Quantidade de Erros: 30
+
+![image](https://github.com/user-attachments/assets/5ba51eba-85b7-4260-8521-5979df71397c)
+
+        Figura 2 - Matriz de Confusão - Resultado de Teste - SVM
+
+Resultados da Validação:
+  - Quantidade de Dados: 11.997
+  - Quantidade de Acertos: 
+  - Quantidade de Erros: 
+  - Acurácia Validação: 100%
+
+## 3.3 Aplicação do Algoritmo Árvore de Decisão (ID3)
 Neste capítulo serão apresentados os resultados da aplicação do algoritmo de Árvore de Decisão ID3 no conjunto de dados proposto.
 
 ![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
 
-        Figura 1 - Representação da Árvore de Decisão Gerada
+        Figura 3 - Representação da Árvore de Decisão Gerada
 
-A seguir, os resultados obtidos na Etapa de Treinamento:
+Resultados de Treino:
   - Profundidade da Árvore: 14 níveis
   - Duração Etapa de Treinamento (conjunto treino): 1,3 seg
-  - Duração Etapa de Previsão e Avaliação (conjunto teste): 0,2 seg
-  - Acurácia: 0.9990043184791544
-  - Kappa: 0.9959406115564705
-  - F1: 0.9965215984468533
+  - Duração Etapa de Previsão e Avaliação (conjunto treino): 0,2 seg
+  - Acurácia Treino: 0.9990043184791544
+  - Kappa Treino: 0.9959406115564705
+  - F1 Treino: 0.9965215984468533
+  - Quantidade de Acertos: 86.287
+  - Quantidade de Erros: 86
 
 ![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
 
-        Figura 2 - Matriz de Confusão - Resultados do Treino - Método ID3
+        Figura 4 - Matriz de Confusão - Resultados do Treino - Método ID3
+
+Resultados de Teste:
+  - Acurácia Teste: 0.9987033435213485
+  - Kappa Teste: 0.994714098573155
+  - F1 Teste: 0.9954707214493691
+  - Quantidade de Acertos: 21.566
+  - Quantidade de Erros: 28
 
 ![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
 
-        Figura 3 - Matriz de Confusão - Resultados do Teste - Método ID3
+        Figura 5 - Matriz de Confusão - Resultados do Teste - Método ID3
 
-
-
-Falta colocar o quanto ele acertou no total!!
+Resultados da Validação:
+  - Quantidade de Dados: 11.997
+  - Quantidade de Acertos: 11.997
+  - Quantidade de Erros: 0
+  - Acurácia Validação: 100%
 
 
 ## 3.4 Análise Comparativa
+
+| Método | Tempo Treinamento Modelo | Qtde Acertos Teste | Qtde Erros Teste | Acurácia |
+|------------------------|------------------------|------------------------|------------------------| ------------------------|
+| SVM | 22m20seg | 21.564 | 30 | 0.99861 |
+| Árvore de Decisão | 1,3 seg | 21.566 | 28 | 0.99870 | 
+
 
 
 # 4. Conclusões
