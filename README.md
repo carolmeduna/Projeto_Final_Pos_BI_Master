@@ -31,7 +31,7 @@ Toda ordem de serviço pode ser classificada como "Determinística" ou "Probabil
 # 2. Desenvolvimento
 A aplicação de algoritmos de machine learning (ML) para problemas de classificação é um processo estruturado que envolve várias etapas: a preparação dos dados, a escolha do algoritmo, o treinamento do modelo e a avaliação de seu desempenho.
 
-##2.1. Preparação dos Dados
+## 2.1. Preparação dos Dados
 O primeiro passo para aplicar um algoritmo de ML a um problema de classificação é preparar os dados. Isso envolve coletar e organizar um conjunto de dados que contenha exemplos rotulados — ou seja, exemplos de entradas (características ou variáveis) junto com suas respectivas classes ou rótulos. Esses dados são frequentemente divididos em dois conjuntos principais:
 
   Conjunto de treinamento: Usado para treinar o modelo de ML, ou seja, para ensinar o algoritmo a fazer previsões.
@@ -61,7 +61,7 @@ Desvantagens do SVM
   Custo computacional: O treinamento de um modelo SVM pode ser computacionalmente intensivo, especialmente em grandes conjuntos de dados. Isso ocorre porque o tempo de treinamento pode crescer rapidamente com o número de amostras e características.
   Escolha do kernel: A escolha do kernel correto e a definição dos parâmetros adequados (como C e o parâmetro do kernel) podem ser desafiadoras e requerem ajuste fino.
 
-##2.2.2 Árvore de Decisão ID3
+## 2.2.2 Árvore de Decisão ID3
 O algoritmo Árvore de Decisão ID3 (Iterative Dichotomiser 3) é um dos métodos mais tradicionais e amplamente utilizados em machine learning para problemas de classificação. Ele constrói uma árvore de decisão de forma recursiva, onde cada nó interno representa uma decisão com base em um atributo dos dados, e cada folha da árvore corresponde a uma classe ou categoria. A construção da árvore visa dividir o espaço de características de maneira a maximizar a pureza das classes em cada nó.
 
 O algoritmo ID3 é baseado na ideia de dividir os dados em subconjuntos com o máximo de homogeneidade possível em relação à classe alvo. Para isso, o ID3 utiliza um critério de seleção de atributos chamado ganho de informação. O ganho de informação mede a redução da incerteza (ou entropia) sobre a classe alvo ao dividir o conjunto de dados com base em um atributo específico.
@@ -75,10 +75,10 @@ Desvantagens do ID3
   - Dependência de atributos discretos: O ID3 é mais adequado para atributos discretos e pode exigir transformações nos dados para lidar com atributos contínuos.
   - Ganho de Informação e Atributos com Muitos Valores: A escolha do atributo a ser dividido pode ser enviesada para atributos com muitos valores, uma vez que eles podem produzir divisões mais puras, mas que não são necessariamente as mais informativas.
 
-##2.3 Treinamento do Modelo
+## 2.3 Treinamento do Modelo
 Após a escolha do algoritmo, o próximo passo é treinar o modelo. O treinamento envolve ajustar os parâmetros do modelo com base no conjunto de dados de treinamento. Durante o treinamento, o algoritmo tenta aprender padrões a partir das características dos dados que permitem prever corretamente as classes. A técnica de otimização usada varia de acordo com o algoritmo, mas o objetivo final é minimizar o erro de previsão, ou seja, tornar o modelo capaz de classificar corretamente os exemplos do conjunto de treinamento.
 
-##2.4 Avaliação do Modelo
+## 2.4 Avaliação do Modelo
 Uma vez treinado, o modelo é avaliado usando o conjunto de teste. A avaliação consiste em medir o desempenho do modelo em dados que não foram usados durante o treinamento. Para problemas de classificação, algumas métricas comuns de avaliação incluem:
 
   - Acurácia: Proporção de previsões corretas em relação ao total de previsões feitas.
@@ -89,14 +89,29 @@ Uma vez treinado, o modelo é avaliado usando o conjunto de teste. A avaliação
 Além disso, dependendo do problema, pode ser necessário ajustar o modelo para melhorar seu desempenho, por meio de técnicas como validação cruzada, ajuste de hiperparâmetros (tuning) e regularização.
 
 # 3. Resultados
+Nesta seção serão apresentados os resultados obtidos pela aplicação dos Algoritmos SVM e Árvore de Decisão ID3 no conjunto de dados.
+
+## 3.1 Descrição do Conjunto de Dados e Tratamento
+Para este estudo, foi utilizada uma base real de dados, composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos.
+
+|Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
+|---|---|
+| Inspeção Programada PIDF-2 | Manutenção e Operação de Sistemas Submarinos | Inspeção de Dutos | Espírito Santo | Determinístico |
 
 
+
+## 3.2 Aplicação do Algoritmo Suport Vector Machine
+
+Tempo de Execução:
+
+
+## 3.3 Aplicação do Algortimo Árvore de Decisão ID3
+
+Tempo de Execução:
 ![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
 
 
-
-
-
+## 3.4 Análise Comparativa
 
 
 # 4. Conclusões
