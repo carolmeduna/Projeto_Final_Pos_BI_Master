@@ -123,7 +123,7 @@ Neste capítulo serão apresentados os resultados da aplicação do algoritmo de
 
 ![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
 
-Figura 1 - Representação da Árvore de Decisão Gerada
+        Figura 1 - Representação da Árvore de Decisão Gerada
 
 A seguir, os resultados obtidos na Etapa de Treinamento:
   - Profundidade da Árvore: 14 níveis
@@ -135,11 +135,11 @@ A seguir, os resultados obtidos na Etapa de Treinamento:
 
 ![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
 
-Figura 2 - Matriz de Confusão - Resultados do Treino - Método ID3
+        Figura 2 - Matriz de Confusão - Resultados do Treino - Método ID3
 
 ![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
 
-Figura 3 - Matriz de Confusão - Resultados do Teste - Método ID3
+        Figura 3 - Matriz de Confusão - Resultados do Teste - Método ID3
 
 
 
