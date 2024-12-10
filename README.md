@@ -97,6 +97,8 @@ Nesta seção serão apresentados os resultados obtidos pela aplicação dos Alg
 ## 3.1 Descrição do Conjunto de Dados e Tratamento
 Conforme comentado anteriormente, para este estudo foi utilizada uma base real de dados da empresa de registro das ordens de serviço realizadas por embarcações submarinas de uma empresa no ramo de óleo e gás. A quantidade de colunas original foi reduzida através da escolha das colunas principais, bem como o tratamento de *missings* efetuado. A base tratada é composta por 5 colunas e aproximadamente 120.000 linhas. Para realização da etapa de treinamento e testes, foi utilizada 90% da base original, e os 10% restantes foi utilizado para verificação dos modelos. Todas as colunas da base são compostas por atributos categóricos. A coluna classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico". Para efeitos de Ilustração, na Tabela 1 abaixo foi apresentada uma amostra do conjunto de Dados.
 
+
+        Tabela 1 - Amostra do Conjunto de Dados
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
 | Inspeção Programada PIDF-2 | Manutenção e Operação de Sistemas Submarinos | Inspeção de Dutos | Espírito Santo | Determinístico |
@@ -104,15 +106,13 @@ Conforme comentado anteriormente, para este estudo foi utilizada uma base real d
 | Lançamento de Âncora | Implantação de Novos Sistemas Submarinos | Ancoragem de Unidade Marítima | Bacia de Santos | Determinístico |
 | Manuseio de Válvula (MDV) | Manutenção e Operação de Sistemas Submarinos e de Ancoragem | Operação de Equipamentos Submarinos | Espírito Santos | Probabilístico |
 
-        Tabela 1 - Amostra do Conjunto de Dados
 
 A Tabela a seguir apresenta a quantidade de atributos distintos por coluna, na base estudada.
 
+Tabela 2 - Quantidade de Atributos Distintos por Coluna
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
 | 556 | 4 | 54 | 12| 2 |
-
-Tabela 2 - Quantidade de Atributos Distintos por Coluna
 
 ## 3.2 Aplicação do Algoritmo Suport Vector Machine (SVM)
 
