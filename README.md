@@ -142,10 +142,15 @@ Resultados de Teste:
 ![image](https://github.com/user-attachments/assets/5ba51eba-85b7-4260-8521-5979df71397c)
 
 Resultados da Validação:
-  - Quantidade de Dados: 11.997
-  - Quantidade de Acertos: 
-  - Quantidade de Erros: 
-  - Acurácia Validação: 100%
+  - Acurácia Teste: 0.9992498124531133
+  - Kappa Teste: 0.9968829285973179
+  - F1 Teste: 0.9973190348525469
+  - Quantidade de Acertos: 11.988
+  - Quantidade de Erros: 9
+
+        Figura 3 - Matriz de Confusão - Resultado da Validação - SVM
+![image](https://github.com/user-attachments/assets/3dc558a3-fd5d-4b25-acb2-3401c773c822)
+
 
 ## 3.3 Aplicação do Algoritmo Árvore de Decisão (ID3)
 Neste capítulo serão apresentados os resultados da aplicação do algoritmo de Árvore de Decisão ID3 no conjunto de dados proposto.
@@ -209,7 +214,7 @@ Entretanto, o tempo computacional requerido para treinar o modelo SVM é signifi
 
 | Método | Tempo Validação Modelo | Qtde Acertos Validação | Qtde Erros Validação | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
-| SVM |  |  |  |  |
+| SVM | 5,5seg | 11.988 | 9 | 0.99925 |
 | Árvore de Decisão | 0.0seg | 11.987 | 10 | 0.99917 | 
 
 Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performance foi a Árvore de Decisão ID3.
