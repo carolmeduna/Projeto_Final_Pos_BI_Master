@@ -156,7 +156,7 @@ Resultados da Validação:
 Neste capítulo serão apresentados os resultados da aplicação do algoritmo de Árvore de Decisão ID3 no conjunto de dados proposto.
 
 
-        Figura 3 - Representação da Árvore de Decisão Gerada
+        Figura 4 - Representação da Árvore de Decisão Gerada
 ![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
 
 Resultados de Treino:
@@ -170,7 +170,7 @@ Resultados de Treino:
   - Quantidade de Erros: 86
 
 
-        Figura 4 - Matriz de Confusão - Resultados do Treino - Método ID3
+        Figura 5 - Matriz de Confusão - Resultados do Treino - Método ID3
 ![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
 
 Resultados de Teste:
@@ -181,7 +181,7 @@ Resultados de Teste:
   - Quantidade de Erros: 28
 
 
-        Figura 5 - Matriz de Confusão - Resultados do Teste - Método ID3
+        Figura 6 - Matriz de Confusão - Resultados do Teste - Método ID3
 ![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
 
 Resultados da Validação:
@@ -192,7 +192,7 @@ Resultados da Validação:
   - Quantidade de Erros: 10
 
 
-        Figura 6 - Matriz de Confusão - Resultados da Validação - Método ID3
+        Figura 7 - Matriz de Confusão - Resultados da Validação - Método ID3
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/e537960b-d9ec-46d5-ba36-3d1bd2f7a2d5">
 
 ## 3.4 Análise Comparativa
@@ -201,7 +201,7 @@ De forma geral, ambos os métodos se demonstraram excelentes para o problema em 
 Entretanto, o tempo computacional requerido para treinar o modelo SVM é significativamente maior. Enquanto o SVM executou a etapa de treinamento em 22minutos, o algoritmo Árvore de Decisão demorou apenas 1,3 seg.
 
 
-        Tabela 2 - Comparação dos Resultados Treino, Teste e Validação
+        Tabela 3 - Comparação dos Resultados Treino, Teste e Validação
 | Método | Tempo Treinamento Modelo | Qtde Acertos Treino | Qtde Erros Treino | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM | 22m20seg | 86.292 | 81 | 0.99906 |
