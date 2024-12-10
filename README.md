@@ -41,7 +41,7 @@ O primeiro passo para aplicar um algoritmo de ML a um problema de classificaçã
 Além disso, é importante realizar algumas etapas de pré-processamento dos dados, como a normalização ou padronização das variáveis, tratamento de valores ausentes e conversão de variáveis categóricas em numéricas.
 
 ## 2.2 Escolha do Algoritmo
-Existem diversos algoritmos de classificação em machine learning, e a escolha do melhor depende do tipo de dados, da complexidade do problema e dos requisitos de desempenho. Neste trabalho, foram utilizados dois algortimos diferentes, para fins de comparação de uso e desempenho de acurácia: o Suport Vector Machine (SVM) e o Árvore de Decisão ID3.
+Existem diversos algoritmos de classificação em machine learning, e a escolha do melhor depende do tipo de dados, da complexidade do problema e dos requisitos de desempenho. Neste trabalho, foram utilizados dois algoritmos diferentes, para fins de comparação de uso e desempenho de acurácia: o Suport Vector Machine (SVM) e o Árvore de Decisão ID3.
 
 ## 2.2.1 Suport Vector Machine
 O Support Vector Machine (SVM) é um dos métodos de aprendizado supervisionado mais poderosos e amplamente utilizados para problemas de classificação. Ele busca encontrar um hiperplano que melhor separa os dados de diferentes classes em um espaço de alta dimensão. Sua popularidade se deve à eficácia em classificar dados não lineares e ao conceito sólido de margem de separação.
