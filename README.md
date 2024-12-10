@@ -109,7 +109,7 @@ Conforme comentado anteriormente, para este estudo foi utilizada uma base real d
 
 A Tabela a seguir apresenta a quantidade de atributos distintos por coluna, na base estudada.
 
-Tabela 2 - Quantidade de Atributos Distintos por Coluna
+        Tabela 2 - Quantidade de Atributos Distintos por Coluna
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
 | 556 | 4 | 54 | 12| 2 |
@@ -125,9 +125,8 @@ A seguir, os resultados obtidos na Etapa de Treinamento:
   - Quantidade de Acertos: 86.292
   - Quantidade de Erros: 81
 
-![image](https://github.com/user-attachments/assets/e9e87918-32a9-4495-9b01-843dc153c7a7)
-
         Figura 1 - Matriz de Confusão - Resultado de Treino - SVM
+![image](https://github.com/user-attachments/assets/e9e87918-32a9-4495-9b01-843dc153c7a7)
 
 Resultados de Teste:
   - Acurácia Teste: 0.9986107252014449
@@ -136,9 +135,8 @@ Resultados de Teste:
   - Quantidade de Acertos: 21.564
   - Quantidade de Erros: 30
 
-![image](https://github.com/user-attachments/assets/5ba51eba-85b7-4260-8521-5979df71397c)
-
         Figura 2 - Matriz de Confusão - Resultado de Teste - SVM
+![image](https://github.com/user-attachments/assets/5ba51eba-85b7-4260-8521-5979df71397c)
 
 Resultados da Validação:
   - Quantidade de Dados: 11.997
@@ -149,9 +147,8 @@ Resultados da Validação:
 ## 3.3 Aplicação do Algoritmo Árvore de Decisão (ID3)
 Neste capítulo serão apresentados os resultados da aplicação do algoritmo de Árvore de Decisão ID3 no conjunto de dados proposto.
 
-![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
-
         Figura 3 - Representação da Árvore de Decisão Gerada
+![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
 
 Resultados de Treino:
   - Profundidade da Árvore: 14 níveis
@@ -163,9 +160,8 @@ Resultados de Treino:
   - Quantidade de Acertos: 86.287
   - Quantidade de Erros: 86
 
-![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
-
         Figura 4 - Matriz de Confusão - Resultados do Treino - Método ID3
+![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
 
 Resultados de Teste:
   - Acurácia Teste: 0.9987033435213485
@@ -174,9 +170,8 @@ Resultados de Teste:
   - Quantidade de Acertos: 21.566
   - Quantidade de Erros: 28
 
-![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
-
         Figura 5 - Matriz de Confusão - Resultados do Teste - Método ID3
+![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
 
 Resultados da Validação:
   - Acurácia Teste: 0.999166458281237
@@ -185,15 +180,16 @@ Resultados da Validação:
   - Quantidade de Acertos: 11.987
   - Quantidade de Erros: 10
 
-<img width="277" alt="image" src="https://github.com/user-attachments/assets/e537960b-d9ec-46d5-ba36-3d1bd2f7a2d5">
         Figura 6 - Matriz de Confusão - Resultados da Validação - Método ID3
-
+<img width="277" alt="image" src="https://github.com/user-attachments/assets/e537960b-d9ec-46d5-ba36-3d1bd2f7a2d5">
 
 ## 3.4 Análise Comparativa
 A análise dos resultados do capítulo anterior nos permite traçar uma análise comparativa entre os métodos utilizados.
 De forma geral, ambos os métodos se demonstraram excelentes para o problema em questão. A acurácia de ambos é bastante similar, e o percentual de Acurácia tanto no conjunto de treino, quanto teste e validação é superior a 99%.
 Entretanto, o tempo computacional requerido para treinar o modelo SVM é significativamente maior. Enquanto o SVM executou a etapa de treinamento em 22minutos, o algoritmo Árvore de Decisão demorou apenas 1,3 seg.
 
+
+        Tabela 2 - Comparação dos Resultados Treino, Teste e Validação
 | Método | Tempo Treinamento Modelo | Qtde Acertos Treino | Qtde Erros Treino | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM | 22m20seg | 86.292 | 81 | 0.99906 |
@@ -208,8 +204,6 @@ Entretanto, o tempo computacional requerido para treinar o modelo SVM é signifi
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM |  |  |  |  |
 | Árvore de Decisão |  |  |  |  | 
-
-        Tabela 2 - Comparação dos Resultados Treino, Teste e Validação
 
 Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performance foi a Árvore de Decisão ID3.
 
