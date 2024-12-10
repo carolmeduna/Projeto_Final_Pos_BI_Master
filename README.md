@@ -179,10 +179,14 @@ Resultados de Teste:
         Figura 5 - Matriz de Confusão - Resultados do Teste - Método ID3
 
 Resultados da Validação:
-  - Quantidade de Dados: 11.997
-  - Quantidade de Acertos: 11.997
-  - Quantidade de Erros: 0
-  - Acurácia Validação: 100%
+  - Acurácia Teste: 0.999166458281237
+  - Kappa Teste: 0.9965357223421739
+  - F1 Teste: 0.9970202622169249
+  - Quantidade de Acertos: 11.987
+  - Quantidade de Erros: 10
+
+<img width="277" alt="image" src="https://github.com/user-attachments/assets/e537960b-d9ec-46d5-ba36-3d1bd2f7a2d5">
+        Figura 6 - Matriz de Confusão - Resultados da Validação - Método ID3
 
 
 ## 3.4 Análise Comparativa
