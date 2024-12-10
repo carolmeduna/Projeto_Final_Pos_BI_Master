@@ -109,6 +109,7 @@ Conforme comentado anteriormente, para este estudo foi utilizada uma base real d
 
 A Tabela a seguir apresenta a quantidade de atributos distintos por coluna, na base estudada.
 
+
         Tabela 2 - Quantidade de Atributos Distintos por Coluna
 | Classe de Serviço | Classe de Entrega | Classe de Demanda | Origem | Classificação |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -125,6 +126,7 @@ A seguir, os resultados obtidos na Etapa de Treinamento:
   - Quantidade de Acertos: 86.292
   - Quantidade de Erros: 81
 
+
         Figura 1 - Matriz de Confusão - Resultado de Treino - SVM
 ![image](https://github.com/user-attachments/assets/e9e87918-32a9-4495-9b01-843dc153c7a7)
 
@@ -134,6 +136,7 @@ Resultados de Teste:
   - F1 Teste: 0.9951534733441034
   - Quantidade de Acertos: 21.564
   - Quantidade de Erros: 30
+
 
         Figura 2 - Matriz de Confusão - Resultado de Teste - SVM
 ![image](https://github.com/user-attachments/assets/5ba51eba-85b7-4260-8521-5979df71397c)
@@ -146,6 +149,7 @@ Resultados da Validação:
 
 ## 3.3 Aplicação do Algoritmo Árvore de Decisão (ID3)
 Neste capítulo serão apresentados os resultados da aplicação do algoritmo de Árvore de Decisão ID3 no conjunto de dados proposto.
+
 
         Figura 3 - Representação da Árvore de Decisão Gerada
 ![image](https://github.com/user-attachments/assets/bdff4fce-20a4-4e84-90a4-34a4525d6095)
@@ -160,6 +164,7 @@ Resultados de Treino:
   - Quantidade de Acertos: 86.287
   - Quantidade de Erros: 86
 
+
         Figura 4 - Matriz de Confusão - Resultados do Treino - Método ID3
 ![image](https://github.com/user-attachments/assets/9144eaae-7fb5-40bd-b252-9f2e32c4fdfa)
 
@@ -170,6 +175,7 @@ Resultados de Teste:
   - Quantidade de Acertos: 21.566
   - Quantidade de Erros: 28
 
+
         Figura 5 - Matriz de Confusão - Resultados do Teste - Método ID3
 ![image](https://github.com/user-attachments/assets/f8b795ff-b4e9-4411-8e63-a95ae1f5afca)
 
@@ -179,6 +185,7 @@ Resultados da Validação:
   - F1 Teste: 0.9970202622169249
   - Quantidade de Acertos: 11.987
   - Quantidade de Erros: 10
+
 
         Figura 6 - Matriz de Confusão - Resultados da Validação - Método ID3
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/e537960b-d9ec-46d5-ba36-3d1bd2f7a2d5">
@@ -203,7 +210,7 @@ Entretanto, o tempo computacional requerido para treinar o modelo SVM é signifi
 | Método | Tempo Validação Modelo | Qtde Acertos Validação | Qtde Erros Validação | Acurácia |
 |------------------------|------------------------|------------------------|------------------------| ------------------------|
 | SVM |  |  |  |  |
-| Árvore de Decisão |  |  |  |  | 
+| Árvore de Decisão | 0.0seg | 11.987 | 10 | 0.99917 | 
 
 Desta forma, pode-se concluir que para este conjunto de dados, o algoritmo de melhor performance foi a Árvore de Decisão ID3.
 
