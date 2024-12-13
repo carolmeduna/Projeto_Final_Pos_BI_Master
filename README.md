@@ -228,6 +228,13 @@ A segunda técnica aplicada (Árvore de Decisão ID3) se demonstrou superior nes
 
 Para a aplicação em questão, será de muita utilidade trazer para uso na empresa uma ferramenta robusta como esta, reduzindo significativamente o tempo de trabalho das equipes de planejamento, que atualmente realizam esta etapa de forma manual.
 
+# 5. Referências
+(1) Data Mining and Machine Learning - Fundamental Concepts and Algorithms. Mohamed Zaki. Cambridge University Press, 776pag jan/2020.
+
+(2) Data Mining: Practical Machine Learning Tools and Techniques 3th edition
+
+(3) Data Science for Business: What You Need to Know about Data Mining and Data-Analytic Thinking 1st Edition
+
 
 ---------------------------------------------------------
 Pós Graduação em Business Inteligence Master
