@@ -15,14 +15,6 @@ Neste trabalho, foram aplicados dois algoritmos de classificação de *machine l
 ### Abstract
 In this work, two machine learning classification algorithms were applied to a real dataset: the *support vector machine* (SVM) and the *random forest* (ID3). The database consists of 4 input columns to 1 output column with approximately 120,000 rows, in which all data are categorical and the classification column has two options: "Deterministic" or "Probabilistic". The methods demonstrated excellent accuracy results, both above 99%. However, the training time of the Random Forest algorithm was significantly shorter, making it the best in the comparison. The application proves to be adequate and quite efficient for the use for which it is proposed.
  
----
-
-Matrícula: 221.101.045
-
-Pontifícia Universidade Católica do Rio de Janeiro
-
-Curso de Pós Graduação *Business Intelligence Master*
-
 
 # 1. Introdução e Objetivos
 A aplicação de algoritmos de machine learning para problemas de classificação é uma abordagem poderosa e flexível para resolver uma ampla gama de desafios. A chave para o sucesso está em preparar bem os dados, escolher o algoritmo certo, treinar adequadamente o modelo e avaliar seu desempenho de forma rigorosa. Com o avanço das técnicas de ML, algoritmos cada vez mais sofisticados têm sido aplicados com sucesso em problemas complexos, oferecendo soluções inteligentes para problemas do cotidiano.
@@ -246,5 +238,11 @@ Para a aplicação em questão, será de muita utilidade trazer para uso na empr
 (3) Data Science for Business: What You Need to Know about Data Mining and Data-Analytic Thinking 1st Edition
 
 
----------------------------------------------------------
+---
+
+Matrícula: 221.101.045
+
+Pontifícia Universidade Católica do Rio de Janeiro
+
+Curso de Pós Graduação *Business Intelligence Master*
 
