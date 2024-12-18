@@ -1,18 +1,28 @@
-# Aplicação_de_Machine_Learning_em_Classificação_para_o_Planejamento_da_Demanda_Probabilística_de_Recursos_Críticos_Submarinos
+# Aplicação de Machine Learning em Classificação para o Planejamento da Demanda Probabilística de Recursos Críticos Submarinos
 
-# Projeto Final
-Aluna: Carolina Meduna Baziewicz
+#### Aluno: [Carolina Meduna Baziewicz](https://github.com/carolmeduna)
+#### Orientadora: [Prof. Manoela Kohler](https://github.com/manoelakohler).
 
-Orientadora: Prof. Dra. Manoela Kohler
+---
 
-Trabalho apresentado ao curso BI MASTER como pré-requisito para conclusão de curso pela PUC-Rio.
+Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
-------------------------------------------------------------------------------------------------------------------------------
-**Resumo**
+---
+
+### Resumo
 Neste trabalho, foram aplicados dois algoritmos de classificação de *machine learning* num conjunto de dados real: o *suport vector machine* (SVM) e o *random forest* (ID3). A base de dados consiste em 4 colunas de entrada para 1 coluna de saída com aproximadamente 120.000 linhas, em que todos os dados são categóricos e a coluna de classificação possui duas opções de resposta: "Determinístico" ou "Probabilístico". Os métodos demonstraram excelentes resultados de acurácia, ambos superiores a 99%. Porém o tempo de treinamento do algoritmo Random Forest foi significativamente menor, tornando-o melhor na comparação. A aplicação se demonstra adequada e bastante eficiente para o uso ao qual se propõe.
 
-**Abstract**
+### Abstract
 In this work, two machine learning classification algorithms were applied to a real dataset: the *support vector machine* (SVM) and the *random forest* (ID3). The database consists of 4 input columns to 1 output column with approximately 120,000 rows, in which all data are categorical and the classification column has two options: "Deterministic" or "Probabilistic". The methods demonstrated excellent accuracy results, both above 99%. However, the training time of the Random Forest algorithm was significantly shorter, making it the best in the comparison. The application proves to be adequate and quite efficient for the use for which it is proposed.
+ 
+---
+
+Matrícula: 221.101.045
+
+Pontifícia Universidade Católica do Rio de Janeiro
+
+Curso de Pós Graduação *Business Intelligence Master*
+
 
 # 1. Introdução e Objetivos
 A aplicação de algoritmos de machine learning para problemas de classificação é uma abordagem poderosa e flexível para resolver uma ampla gama de desafios. A chave para o sucesso está em preparar bem os dados, escolher o algoritmo certo, treinar adequadamente o modelo e avaliar seu desempenho de forma rigorosa. Com o avanço das técnicas de ML, algoritmos cada vez mais sofisticados têm sido aplicados com sucesso em problemas complexos, oferecendo soluções inteligentes para problemas do cotidiano.
@@ -237,6 +247,4 @@ Para a aplicação em questão, será de muita utilidade trazer para uso na empr
 
 
 ---------------------------------------------------------
-Pós Graduação em Business Inteligence Master
 
-Universidade Pontificia Católica do Rio de Janeiro
